@@ -7,7 +7,130 @@
     <title>Curso Practico Javascript Platzi</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <h1>Calculadora de Area y Perimetro</h1>
+    </header>
+
+    <form action="">
+
+        <label for="ladoCuadrado">Cuanto mide un Lado de tu Cuadrado?</label>
+        <input type="number" id="ladoCuadrado"/>
+
+        <div>
+            <button type="button" onclick="calcularPerimetro()">Calcular Perimetro</button>
+            <button type="button" onclick="calcularArea()">Calcular Area</button>
+        </div>
+
+    </form>
+<!-- TRIANGULO -->
+    <section>
+      <h2>Area y Perimetro de Triangulo</h2>
+      <form action="">
+
+
+				<div>
+        	<label 
+						for="ladoUnoTriangulo">
+						Cuanto mide el primer lado de tu triangulo?
+					</label>
+        	<input type="number" id="ladoUnoTriangulo"/>
+				</div>
+
+				<div>
+					<label 
+						for="ladoDosTriangulo">
+						Cuanto mide el SEGUNDO lado de tu triangulo?
+					</label>
+					<input type="number" id="ladoDosTriangulo"/>
+				</div>
+
+				<div>
+					<label 
+						for="baseTriangulo">
+						Cuanto mide la BASE  de tu triangulo?
+					</label>
+					<input type="number" id="baseTriangulo"/>
+				</div>
+
+        <div>
+					<label 
+						for="alturaTriangulo">
+						Cuanto mide la ALTURA de tu triangulo?
+					</label>
+					<input type="number" id="alturaTriangulo"/>
+				</div>
+
+        <div>
+
+          <button type="button" onclick="calcularPerimetroTriangulo()">Calcular Perimetro</button>
+
+          <button type="button" onclick="calcularAreaTriangulo()">Calcular Area</button>
+
+        </div>
+
+      </form>
+    </section>
+
+    <section>
+      <h2>Area y Circunferencia de Circulo</h2>
+      <form action="">
+
+				<div>
+        	<label 
+						for="ladoUnoTriangulo">
+						Cuanto mide el RADIO de tu Circulo?
+					</label>
+        	<input type="number" id="radioInput"/>
+				</div>
+
+        <div>
+
+          <button type="button" onclick="calcularCircunferencia()">Calcular Circunferencia</button>
+
+          <button type="button" onclick="calcularAreaCirculo()">Calcular Area</button>
+
+        </div>
+
+      </form>
+    </section>
+<!--  TRIANGULO ISOSELES EJERCICIO -->
+    <section>
+      <h2>Area y Circunferencia de Triangulo isósceles</h2>
+      <form action="">
+
+				<div>
+        	<label 
+						for="ladoUnoIsoseles">
+						Lado UNO IGUAL de tu Triangulo ISOSELES
+					</label>
+        	<input type="number" id="ladoUnoIsoseles"/>
+				</div>
+
+        <div>
+        	<label 
+						for="ladoDosIsoseles">
+						Lado DOS IGUAL de tu Triangulo ISOSELES
+					</label>
+        	<input type="number" id="ladoDosIsoseles"/>
+				</div>
+
+
+        <div>
+        	<label 
+						for="baseIsoseles">
+						Base de tu Triangulo ISOSELES
+					</label>
+        	<input type="number" id="baseIsoseles"/>
+				</div>
+
+        <div>
+
+          <button type="button" onclick="calcularAlturaIsoseles()">Calcular Altura</button>
+
+        </div>
+
+      </form>
+    </section>
 
     <script src="js/figuras.js"></script>
 </body>
